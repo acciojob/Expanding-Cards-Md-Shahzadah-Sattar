@@ -1,1 +1,39 @@
 /*  your css code here. If applicable */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.panel {
+    flex: 0 0 20%;
+    margin: 10px;
+    overflow: hidden;
+    transition: flex 0.7s ease-in-out;
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.panel:not(.active) {
+    flex: 0 0 5%;
+}
+
+.img-text {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    opacity: 0.8;
+}
